@@ -1,5 +1,5 @@
 import React, { useGlobal } from 'reactn';
-import Counter from '../components/Counter'
+import Counter from '../components/counter'
 
 function Home() {
   const [counter] = useGlobal('count')

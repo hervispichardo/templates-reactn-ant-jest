@@ -1,14 +1,14 @@
 import React, { useGlobal, useDispatch } from 'reactn';
-
+import { Wrapper } from './Counter.style'
 function Counter() {
 
   const [counter] = useGlobal('count')
   const increment = useDispatch('increment')
   return (
-    <div>
+    <Wrapper>
       <div>Counter: {counter}</div>
       <button onClick={ () => increment()}>Increment</button>
-    </div>
+    </Wrapper>
   );
 }
 

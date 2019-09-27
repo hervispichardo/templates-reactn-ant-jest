@@ -5,7 +5,7 @@ import { Layout } from 'antd';
 import Home from '../pages/Home'
 import Project from '../pages/Project'
 
-import Navigation from '../components/Navigation'
+import Navigation from '../components/navigation'
 
 const { Header, Content, Footer } = Layout;
 

@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import { Menu } from 'antd';
+import { Wrapper } from './Navigation.style'
 
 function Navigation() {
   return (
-    <div>
+    <Wrapper>
       <Menu
         theme="dark"
         mode="horizontal"
@@ -20,7 +21,7 @@ function Navigation() {
       </Menu>
 
 
-    </div>
+    </Wrapper>
   );
 }
 
