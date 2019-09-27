@@ -24,13 +24,26 @@
     "start": "REACT_APP_VERSION=$npm_package_version REACT_APP_DEV_MODE=true react-app-rewired start",
     "build": "REACT_APP_VERSION=$npm_package_version PUBLIC_URL=https://hervispichardo.com/ react-app-rewired build",
     "deploy": "sh deploy.sh",
-    "test": "jest --verbose ./test",
-    "test:watch": "jest --watch --verbose false ./test",
+    "test": "jest --verbose ./tests",
+    "test:watch": "jest --watch --verbose false ./tests",
     "eject": "react-app-rewired eject"
   },
   "homepage": "https://hervispichardo.com/reactn-ant-jest/",
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "jest": {
+    "verbose": true,
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
   },
   "browserslist": {
     "production": [

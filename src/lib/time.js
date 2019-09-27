@@ -1,3 +1,4 @@
+import * as R from 'ramda'
 import moment from 'moment-timezone'
 import './locale.js'
 moment.locale('es')
