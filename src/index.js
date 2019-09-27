@@ -1,8 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import { makeStore } from './store';
 import App from './containers/App';
+import './index.css';
 import * as serviceWorker from './serviceWorker';
+
+
+// Make store Reactn
+makeStore()
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

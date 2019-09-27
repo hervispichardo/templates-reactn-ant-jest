@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useGlobal } from 'reactn';
+import Counter from '../components/Counter'
 
 function Home() {
+  const [counter] = useGlobal('count')
   return (
     <div>
-      Home
+      Home counter: { counter }
+      <Counter />
     </div>
   );
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import { Menu } from 'antd';
 
-function Header() {
+function Navigation() {
   return (
     <div>
       <Menu
@@ -24,4 +24,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Navigation;
